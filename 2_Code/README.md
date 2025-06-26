@@ -14,6 +14,19 @@
   - 如何配置环境 (pip install -r requirements.txt)。
   - 如何运行主程序 (python main_simulation.py)。
 
+功能说明
+main_simulation.py：设置迭代次数、频率范围等参数，调用各模块完成模拟全流程
+numerical_methods.py：实现谢尔宾斯基分形生成、矩量法（MoM）和边界元法（BEM）
+data_analysis.py：计算分形维数、复杂度指数，拟合复杂度 - RCS 关系
+visualization.py：生成分形动画、绘制 RCS 频响曲线和复杂度 - RCS 关系图
+输出结果
+动画文件：assets/sierpinski_animation.gif（分形生成过程）
+图表文件：
+results/rcs_frequency_response.png（RCS 频响曲线）
+results/complexity_rcs_relationship.png（复杂度 - RCS 关系）
+数据文件：
+results/fractal_iteration_X_rcs.csv（各迭代次数的 RCS 频响数据）
+results/fractal_dimension_rcs.csv（复杂度 - 分形维数 - RCS 关系）
 
 ## 注意：
 你也可以不按照预设的目录结构，按照自己的喜好组织代码，只要能够清晰地说明每个文件的功能即可。
